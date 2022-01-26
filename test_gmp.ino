@@ -7,7 +7,7 @@ int in1 = 10;
 int in2 = 11;
 String n = "0" ;
 int time;
-int tran;
+float tran;
 
 SoftwareSerial mySerial(2, 3);
 String inputString = "";
