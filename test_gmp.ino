@@ -35,8 +35,8 @@ void loop() {
   else{
  //Stage 1 – MAX speed
     analogWrite(enA, 255);
-    digitalWrite(in1, HIGH);
-    digitalWrite(in2, LOW);
+    digitalWrite(in1, LOW);
+    digitalWrite(in2, HIGH);
     Serial.println("Start");
     delay(tran*1000UL); 
  //Stage 2 stop !!!
@@ -47,8 +47,8 @@ void loop() {
     delay(time*1000UL);
   //Stage 3 MAX speed reversing the direction in reverse
     analogWrite(enA, 255);
-    digitalWrite(in1, LOW);
-    digitalWrite(in2, HIGH);
+    digitalWrite(in1, HIGH);
+    digitalWrite(in2, LOW);
     Serial.println("reversing");
     delay(tran*1000UL); 
     Serial.println("OK!");
