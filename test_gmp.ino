@@ -1,4 +1,4 @@
-// แก้เวลา tran เสร็จ Verify ทุกครั้งก่อน Upload เพื่อตรวจสอบว่า Code error ไหม
+// แก้เวลา tran เสร็จ Verify ทุกครั้งก่อน Upload เพื่อตรวจสอบว่า Code ว่า error ไหม
 // หลังจาก Done Uploading ไปที่ Serial Monitor ใส่เวลา้ในการถ่ายภาพไป(วินาที)
 // เช่น ใส่ เลข 5 ไป แล้วกด Send มอเตอร์จะหยุด ถ่ายภาพ 5 วินาที
 #include <SoftwareSerial.h>
