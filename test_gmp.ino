@@ -8,6 +8,7 @@ int in2 = 11;
 String n = "0" ;
 int time;
 float tran;
+float tranr;
 
 SoftwareSerial mySerial(2, 3);
 String inputString = "";
@@ -18,6 +19,7 @@ void setup() {
  mySerial.begin(9600);
  Serial.begin(9600);
  tran = 5; //<<-----ฒใส่เวลาส่ง Source เป็นวินาที เช่น tran = 5 => 5วินาที(แก้เฉพาะตรง นี้ เท่านั้น)
+ tranr = 5; // <<< เวลาขากลับ(s)
 }
 
 void loop() {
@@ -50,7 +52,7 @@ void loop() {
     digitalWrite(in1, HIGH);
     digitalWrite(in2, LOW);
     Serial.println("reversing");
-    delay(tran*1000UL); 
+    delay(tranr*1000UL); 
     Serial.println("OK!");
     }
   }
