@@ -10,13 +10,13 @@ int time;
 float tran;
 float tranr;
 
-SoftwareSerial mySerial(2, 3);// Input time by bluetooth module
+SoftwareSerial bt(2, 3);// connect BLE
 
 void setup() {
  pinMode(enA, OUTPUT);
  pinMode(in1, OUTPUT);
  pinMode(in2, OUTPUT);
- bt.begin(9600); //Input time by bluetooth module
+ bt.begin(9600); //BLE
  Serial.begin(9600);
  tran = 5; //<<-----ฒใส่เวลาส่ง Source เป็นวินาที เช่น tran = 5 => 5วินาที(แก้เฉพาะตรง นี้ เท่านั้น)
  tranr = 5; // <<< เวลาขากลับ(s)
